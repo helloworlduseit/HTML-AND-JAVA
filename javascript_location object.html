@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script> 
+function loadURL(){
+	var url = frm1.txtUrl.value;
+	//location.href=url;
+	location.assign(url);
+}
+
+</script>
+<h1>Window Object </h1>
+<form name="frm1">
+Enter a URL:
+<input type="text" name="txtUrl"/><br/>
+<input type ="button" value="Load"
+onClick="loadURL()"/>
+</body>
+</html>

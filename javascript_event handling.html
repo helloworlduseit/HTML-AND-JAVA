@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+	var images=["Desert","Jellyfish","Koala"];
+	var i=0;
+	function changeImage(){
+	i++;
+	if(i==images.length){i=0;}
+
+	var image = document.getElementById("imgMyImg");
+	image.src = "Sample Pictures/"+images[i]+".jpg";
+	}
+
+</script>
+	<h1>EVENT DEMO</H1>
+	<img src="Sample Pictures/Hydrangeas.jpg" id="imgMyImg"
+	onmouseover="changeImage()"
+	onmouseout="changeImage()"
+	width="400",height="500"/>
+
+</body>
+</html>

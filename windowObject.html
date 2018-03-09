@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script> 
+function openWindow(){
+	var url = frm1.txtUrl.value;
+	win = window.open(url,"mywin", "height=300,width=600");
+	win.moveTo(500,500);
+}
+function closeWindow(){
+win.close();
+}
+</script>
+<h1>Window Object </h1>
+<form name="frm1">
+Enter a URL:
+<input type="text" name="txtUrl"/><br/>
+<input type ="button" value="Go"
+onClick="openWindow()"/>
+<input type="button" value="close"
+onClick="closeWindow()"/>
+</body>
+</html>

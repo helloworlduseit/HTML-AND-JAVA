@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>Javascript Demo Array </h1>
+</head>
+<body>
+<script> 
+	var myArr = new Array("six","seven","eight");
+	myArr[myArr.length] = "one";
+	myArr[myArr.length] = 22;
+	myArr[myArr.length] = "Three";
+	myArr[myArr.length]=false;
+	
+	//myArr.reverse();
+	
+	for(i=0; i<myArr.length; i++){
+	document.write("</br>"+myArr[i]);
+	}
+	myArr = myArr.concat([77,33]);
+	document.write("</br>"+myArr.join(' , '));
+</script>
+
+</body>
+</html>

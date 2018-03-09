@@ -1,0 +1,50 @@
+p{
+	color:blue;
+	text-align:center;
+	text-decoration:overline;
+	text-transform:uppercase;
+	font-family:Matura MT Script Capitals;
+	font-style:oblique;
+	}
+
+div{ color:maroon;
+	text-decoration:underline;
+	text-indent:50px;
+	}
+	
+h1{
+	background-image:url('Sample Pictures/Koala.jpg');
+	background-repeat:repeat;
+	background-size:100% 100% 100%;
+	background-attachment:scroll;
+	color:yellow;
+	text-shadow:5px 5px 5px red;
+	text-align:center;
+	font-family:jokerman;
+	font-style:normal;
+	border-radius:25px;
+	border-width:200px;
+	border-top-style:dotted;
+	box-shadow:5px 5px 5px red;
+	border-color:black;
+
+	
+	}
+	
+.one{
+color:pink;
+}
+
+
+#id{
+color:magenta;
+}
+
+div[class]
+{
+border:5px solid red;
+}
+
+div:hover,p:hover,h1:hover{
+	background-color:cyan;
+	}

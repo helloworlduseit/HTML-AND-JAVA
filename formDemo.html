@@ -1,0 +1,88 @@
+<html>
+<head>
+</head>
+<body>
+<form name="frmReg" action="" method="">
+	Enter your name:
+	<input type="text" required placeholder = "Enter Name Here" name="uname"/></br>
+	
+	
+	Enter your Password:
+	<input type="Password" required autofocus name="pass" /></br>
+	
+	
+	Enter your login id:
+	<input type="text" pattern="[A-Za-z]{6}[0-9]{2}" title="Enter 6 character and 2 digits" required /></br>
+	
+	
+	Enter your Email ID
+	<input type="email"/></br>
+	
+	
+	Enter your Country
+	<input type="text" list="clist"/>
+	
+	<datalist id ="clist">
+		<option value="India"/>
+		<option value="Indionesia" />
+		<option value="Australia" />
+		<option value="America" /> 
+	</datalist></br>
+	
+	Enter your Age:
+	<input type="number" min="20" max="60" step="2"/></br>
+	Range:
+	<input type="range" min="20" max="60"/> </br>
+	
+	Enter your Birth Date:
+	<input type="date" name="dob"/>
+	
+		
+	Select Gender
+	<input type="radio" name="gender" value="Male">male
+	<input type="radio" name="gender" value="Female">Female</br>
+	
+	
+	Select Hobies:
+	<input type="checkbox" name="hobies" checked value="Reading">
+	Reading Books
+	<input type="checkbox" name="hobies" value="cooking">
+	Cooking	
+	<input type="checkbox" name="hobies" value="Gardening">
+	Gardening
+	</br>
+	
+	
+	Select City
+	<select>
+		<option>Selct</option>
+		<option value="Mumbai" selected>Mumbai</option>
+		<option value="Pune">Pune</option>
+		<option value="Chennai">Chennai</option>
+		<option value="Bangalore">Bangalore</option>
+		<option value="Hyderabad">Hyderabad</option>
+	</select></br>
+	
+	
+	Upload your photo:
+	<input type="file" name="photo"><br/>
+		
+		
+		
+	<input type="submit" value="Register"/>
+	<input type="reset" value="Reset"/>
+	<input type="button" value="preview" onClick=""/>
+	<br/>
+	<br/>
+	
+	<audio controls>
+		<source src="sample audio/Kalimba.mp3" type="audio/mpeg"> 
+	</audio><br/>
+	
+	
+	<video src="Sample Videos/Sunflower_Flower_Opening_Time_Lapse.ogv.480p.webm" controls width="300" height="300">
+	</video>
+	
+</form>
+</body>
+</html>

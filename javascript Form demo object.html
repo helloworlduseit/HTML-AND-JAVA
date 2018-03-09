@@ -1,0 +1,34 @@
+<html>
+<head>
+<h1>RegExp Demo</h1>
+</head>
+<body>
+<script>
+function validate(){
+var uname = frm1.txtUname.value;
+var pass = frm1.txtPass.value;
+var cpass = frm1.txtCpass.value;
+
+
+if(pass!=cpass){
+ alert("Password and Retype Password must be same");
+ return false}
+ else{
+ alert(uname+" logged successfully");
+ return true;
+ }
+ }
+
+</script>
+<form name="frm1" onsubmit="return validate()">
+		Enter Name:
+		<input type="text" name="txtUname" required pattern="[A-Z]{1}[A-Za-z]{3,}" title="Enter first letter capital " /></br>
+		Enter Password:
+		<input type="password" pattern="[0-9a-zA-z_*#@]{6,}"name="txtPass"
+		title="Enter alphanumeric password (min 6 charcters required)" required/></br>
+		Re-Type Password:
+		<input type="password" name="txtCpass"/></br>
+		<input type="submit" name="submit"/>
+</form>
+</body>
+</html>

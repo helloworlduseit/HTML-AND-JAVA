@@ -1,0 +1,26 @@
+<html>
+<head>
+<h1>RegExp Demo</h1>
+</head>
+<body>
+<script src="javascriptFormDemo2.js"></script>
+<form name="frm1" onsubmit="return validate()">
+		Enter Name:
+		<input type="text" name="txtUname" required pattern="[A-Z]{1}[A-Za-z]{3,}" title="Enter first letter capital " /></br>
+		Enter date of Birth:
+		<input type="date" name="dob"/></br>
+		Select State:
+		<select name="state" onChange="populateCity()">
+			<option value="None">select state</option>
+			<option value="MH">Maharashtra</option>
+			<option value="KR">Karnataka</option>
+			<option value="UP">Tamil Nadu</option>
+		</select></br>
+		Select City:
+		<select name="city">
+			<option>Select City</option>
+		</select></br>
+		<input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
